@@ -5,6 +5,7 @@ def md5_brut(hash, pwfile):
 		descript = open(pwfile, "r", encoding='utf-8', errors='ignore')
 	except:
 		print("Словарь не сушествует или файл не найден!")
+		exit()
 		
 
 	for password in descript:
