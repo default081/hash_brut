@@ -6,7 +6,6 @@ def md5_brut(hash, pwfile):
 	except:
 		print("Словарь не сушествует или файл не найден!")
 		exit()
-		
 
 	for password in descript:
 		fileemd5 = hashlib.md5(password.encode().strip()).hexdigest()
